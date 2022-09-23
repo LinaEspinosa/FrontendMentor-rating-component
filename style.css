@@ -1,0 +1,85 @@
+:root{
+    --colorPrimary:#fb7413;
+    --clrNeutralWhite:#ffffff;
+    --clrLightGrey:#959eac;
+    --clrDarkGrey:hsl(216, 12%, 54%);
+    --clrBlue:hsl(213, 19%, 18%);
+    --clrDarkBlue:hsl(216, 12%, 8%);   
+    --fuente:'Overpass', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: var(--fuente);
+    
+}
+
+body{
+    background-color:var(--clrDarkBlue);
+    width:100%;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius:1rem;
+    margin:1.3rem;
+    padding:1.3rem;
+
+
+}
+
+.card .card-icon{
+    color:var(--colorPrimary);
+    background-color: ;
+    margin-bottom:1rem;
+}
+
+.card .card-title{
+    color:var(--clrNeutralWhite);
+    text-align: left;
+    margin-bottom:1rem;
+}
+
+.card .card-text{
+    color:var(--clrLightGrey);
+    font-size:.9rem;
+    font-weight: 400;
+}
+
+.card .numeration{
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color:var(--clrLightGrey);
+}
+
+.card .numeration .ratio{
+    background-color:var(--clrLightGrey);
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card .card-btn button{
+    background-color:var(--colorPrimary);
+    border:none;
+    text-align: center;
+    width:100%;
+    color:var(--clrNeutralWhite);
+    border-radius:5rem;
+    padding:.9rem 0;
+    font-weight:700;
+    letter-spacing:.3rem;
+}
