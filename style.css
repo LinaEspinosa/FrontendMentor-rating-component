@@ -147,3 +147,35 @@ body{
     line-height: 1.5;
     font-weight:400;
 }
+
+/* Responsive */
+
+@media only screen and (min-width: 376px) {
+    .card,
+    .card2{
+        width: 23rem;
+        padding:1.8rem;
+        font-weight: 400;
+    }
+    
+    .card .card-icon{
+        margin-bottom: 2rem;
+    }
+    
+    .card .numeration {
+        margin-top: 1.5rem;
+    }
+    .card button{
+        padding:.7rem 0;
+        font-size: .8rem;
+        letter-spacing: .1rem;
+        
+    }
+
+    .card2 .text{
+        
+        font-size:.8rem;
+        padding:.5rem;
+    }
+
+  }
