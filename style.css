@@ -21,6 +21,7 @@ body{
     width:100%;
     height: 100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
 }
@@ -28,7 +29,7 @@ body{
 .card{
     display:flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:rgba(37, 45, 55,0.5);
     border-radius:1rem;
     margin:1.3rem;
     padding:1.3rem;
@@ -38,8 +39,14 @@ body{
 
 .card .card-icon{
     color:var(--colorPrimary);
-    background-color: ;
+    background-color:rgba(124, 135, 152,.1);
     margin-bottom:1rem;
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .card .card-title{
@@ -60,19 +67,25 @@ body{
     display: flex;
     justify-content: space-between;
     color:var(--clrLightGrey);
+    font-size: .9rem;
 }
 
 .card .numeration .ratio{
-    background-color:var(--clrLightGrey);
+    background-color:rgba(124, 135, 152,.1);
     width: 2.5rem;
     height:2.5rem;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
+    transition:background-color 0.5s;
+    cursor:pointer;
 }
-
-.card .card-btn button{
+.card .numeration .ratio:hover{
+    background-color:rgba(255,255,255,0.5);
+    color:var(--clrNeutralWhite);
+}
+.card button{
     background-color:var(--colorPrimary);
     border:none;
     text-align: center;
@@ -82,4 +95,55 @@ body{
     padding:.9rem 0;
     font-weight:700;
     letter-spacing:.3rem;
+    transition:background-color 0.5s;
+    cursor:pointer;
+}
+.card .card-btn:hover{
+    background-color:var(--clrNeutralWhite);
+    color:var(--colorPrimary);
+}
+
+.card .card-btn a{
+    list-style:none;
+    text-decoration: none;
+    color:var(--clrNeutralWhite);
+}
+
+.card2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background-color:var(--clrBlue);
+    border-radius: 1rem;
+    margin:1.5rem;
+    padding:2rem 1rem;
+}
+
+.card2 .card2-img{
+    margin-bottom: 1.3rem;
+}
+
+.card2  .rating {
+    color:var(--colorPrimary);
+    font-size: .8rem;
+    font-weight:700;
+    background-color:rgba(124, 135, 152,.1);
+    padding:.4rem .7rem;
+    border-radius: 25rem;
+    margin-bottom:1.2rem;
+}
+
+.card2 .title-thanks{
+    color:var(--clrNeutralWhite);
+    margin-bottom: .8rem;
+}
+
+.card2 .text{
+    color:var(--clrLightGrey);
+    font-weight: 400;
+    font-size:.9rem;
+    text-align:center;
+    line-height: 1.5;
+    font-weight:400;
 }
